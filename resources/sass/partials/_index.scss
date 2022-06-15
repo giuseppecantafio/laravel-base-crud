@@ -1,0 +1,19 @@
+.card {
+    width: 200px;
+    height: 520px;
+    position: relative;
+    border: 0;
+    .card-body {
+        .card-title {
+            font-size: 1rem;
+        }
+        .card-text {
+            font-size: 0.7rem;
+        }
+        a {
+            position: absolute;
+            bottom: 0;
+            right: 8px;
+        }
+    }
+}

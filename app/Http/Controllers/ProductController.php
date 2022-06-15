@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
         $prodotti = Product::all();
-        return view('products.index');
+        return view('products.index', compact('prodotti'));
     }
 
     /**
@@ -36,7 +36,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
