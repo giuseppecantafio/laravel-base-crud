@@ -35,8 +35,12 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        @dump($request);
+    {   
+        $data = $request->all();
+         $newProduct = new Product();
+         $newProduct = Product::create($data);
+         return redirect()->route('products.show', $newProduct->id);
+        
     }
 
     /**
