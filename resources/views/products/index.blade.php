@@ -7,7 +7,7 @@
 
 <div class="container">
     <div class="row">
-        @foreach($prodotti as $elm)
+        @foreach($products as $elm)
         <div class="col-2 py-2">
             <div class="card">
               <img class="card-img-top" src="{{$elm->thumb}}" alt="Card image cap">

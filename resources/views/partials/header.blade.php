@@ -14,7 +14,7 @@
         <a class="nav-link" href="/products">Tutti i fumetti</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/products/create">Contattaci</a>
+        <a class="nav-link" href="/products/create">Vendi con noi</a>
       </li>
     </ul>
   </div>

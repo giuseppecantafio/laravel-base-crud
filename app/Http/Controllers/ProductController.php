@@ -14,8 +14,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $prodotti = Product::all();
-        return view('products.index', compact('prodotti'));
+        $products = Product::all();
+        return view('products.index', compact('products'));
     }
 
     /**
@@ -36,7 +36,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        
+        @dump($request);
     }
 
     /**
@@ -45,10 +45,10 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Product $product)
     {
-        $prodotto = Product::findOrFail($id);
-        return view('products.show', compact('prodotto'));
+        
+        return view('products.show', compact('product'));
     }
 
     /**
