@@ -20516,10 +20516,10 @@ readers do not read off random characters that represent icons */
 .card .card-body .card-text {
   font-size: 0.7rem;
 }
-.card .card-body a {
+.card .card-body .user-options {
   position: absolute;
   bottom: 0;
-  right: 8px;
+  left: 5px;
 }
 
 .main-container {
@@ -20535,4 +20535,20 @@ footer {
 }
 footer span {
   color: lightcoral;
+}
+
+h3.show, .show.h3 {
+  color: blue;
+}
+
+p.show {
+  text-align: justify;
+  padding: 15px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+img.show {
+  width: 192px;
+  height: 291px;
 }

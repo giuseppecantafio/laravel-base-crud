@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 
-@section('pageTitle', 'Elenco prodotti in vendita')
+@section('pageTitle', 'Libreria')
 
 @section('mainContent')
-<h1 class="text-center my-4">Ecco l'elenco dei nostri prodotti:</h1>
+<h1 class="text-center my-4">Ecco la tua libreria</h1>
 
 <div class="container">
     <div class="row">
@@ -19,7 +19,15 @@
                   Data di uscita: {{$elm->sale_date}}<br />
                   Tipologia: {{$elm->type}}
                 </p>
-                <a href="{{route('products.show', $elm->id)}}" class="btn btn-success">Maggiori informazioni</a>
+                <div class="user-options d-flex align-items-center justify-content-center gap-2">
+                  <a href="{{route('products.show', $elm->id)}}" class="btn btn-primary"><i class="fa-solid fa-circle-info"></i></a>
+                  <a href="{{route('products.edit', $elm->id)}}" class="btn btn-success"><i class="fa-solid fa-pen"></i></a>
+                 <form action="{{route('products.destroy', $elm->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button onclick="return confirm('Sei sicuro di voler cancellare?')" class="btn btn-danger" type="submit"><i class="fa-solid fa-trash"></i></button>
+                </div>
+               </form>
               </div>
             </div>
         </div>

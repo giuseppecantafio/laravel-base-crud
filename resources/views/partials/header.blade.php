@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
- <img src="https://rlv.zcache.co.uk/japan_kanji_manga_style_white_face_square_wall_clock-r0f02cdc68702460298d98616fe19a6ee_fup1y_8byvr_630.jpg" alt="img" style="width: 50px; height: 50px" class="mx-1">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1200px-DC_Comics_logo.svg.png" alt="img" style="width: 50px; height: 50px" class="mx-1">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -11,10 +11,10 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/products">Tutti i fumetti</a>
+        <a class="nav-link" href="/products">Tutti i tuoi fumetti</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/products/create">Vendi con noi</a>
+        <a class="nav-link" href="/products/create">Aggiungi un fumetto</a>
       </li>
     </ul>
   </div>

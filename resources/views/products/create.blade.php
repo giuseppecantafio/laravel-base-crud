@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('pageTitle', 'Contattaci')
+@section('pageTitle', 'Aggiungi un fumetto')
 
 @section('mainContent')
 <h1 class="text-center">Inserisci i dati del tuo fumetto DC Comics</h1>
@@ -51,7 +51,7 @@
         </select>
       </div>
       
-       <button type="submit" class="btn btn-success">Aggiungi prodotto</button>
+       <button type="submit" class="btn btn-success">Aggiungi fumetto</button>
 
     </form>
 </div>
